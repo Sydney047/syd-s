@@ -11,7 +11,7 @@
     background-image: url( './assets/headerWallpaper.jpg');
     background-position: center;
     background-size: cover;
-    border-radius: 2em 2em .3em .3em;
+    border-radius: 1em 1em .3em .3em;
 }
 .mainDivText {
     position: absolute;
@@ -59,7 +59,7 @@
     background-color: var(--accent);
     color: var( --text-darkBg );
     border: none;
-    border-radius: 1rem;
+    border-radius: .6rem;
     font-weight: bold;
     cursor: pointer;
     transition: transform 200ms ease-out, background-color 200ms ease-out;
@@ -73,4 +73,32 @@
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+}
+
+/* phones styles */
+@media ( max-width: 600px ) {
+    .home {
+        grid-template: 10em repeat( 2, 7em ) / repeat( 2, 1fr );
+    }
+    .mainDivText {
+        font-size: 1.5em;
+    }
+    .textDiv {
+        left: 1em;
+        top: .5em;
+        font-size: .5em;
+        /* font-weight: 500; */
+        line-height: 1.5em;
+    }
+    .textDiv p, .textDiv h1 {
+        top: 1rem;
+        max-width: 90%;
+    }
+    .home div button {
+        max-width: 4rem;
+        max-height: 1.5rem;
+        padding: .3rem;
+        bottom: 2em;
+        right: 30%;
+    }
 }

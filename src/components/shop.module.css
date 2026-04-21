@@ -5,11 +5,10 @@
     align-items: center;
 }
 .shopNavigation {
-    position: relative;
     display: flex;
     /* overflow: scroll; */
     place-content: center;
-    max-width: 40vw;
+    max-width:350px;
     padding: .1rem 2rem;
     gap: .5rem;
     border-radius: 15px;
@@ -41,4 +40,11 @@
     border: 2px solid var( --primaryColor );
     border-bottom: none;
     border-radius: 12px 12px 0 0;
+}
+@media ( max-width: 600px ) {
+    .shopNavigation {
+        max-width: 280px;
+        gap: .3rem;
+        font-size: .9em;
+    }
 }
