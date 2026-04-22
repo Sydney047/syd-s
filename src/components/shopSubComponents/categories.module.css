@@ -117,7 +117,7 @@
     cursor: pointer;
     transition: transform 200ms ease, opacity 200ms ease;
 }
-.cartBtn:hover {
+.cartBtn:hover, .emptyCart button:hover {
     opacity: .6;
     transform: translateY( -2px );
 }
@@ -132,8 +132,18 @@
     align-items: center;
     margin-bottom: 2rem;
 }
-.link {
-    text-decoration: none ;
+.emptyCart button {
+    min-width: 200px;
+    max-width: 250px;
+    height: 30px ;
+    background-color: var( --text-darkBg );
+    border-radius: 1em;
+    border: none;
+    margin: 10px;
+}
+.emptyCart button a {
+    text-decoration: none;
+    color: var( --primaryColor );
 }
 .cart {
     display: flex;

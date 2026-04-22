@@ -14,7 +14,7 @@ export default function CartCard( { product, incrementFunction, decrementFunctio
             <h3 className={ style.title } >{ product.title }</h3>
             <p>${ product.price }</p>
             <div>
-                <button onClick={ decrementFunction } className={ style.leftCartBtn } >&#x2212;</button><p>{ product.quantity }</p>
+                { product.quantity === 0 ? <button onClick={ decrementFunction } className={ style.leftCartBtn } >Del</button> : <button onClick={ decrementFunction } className={ style.leftCartBtn } >&#x2212;</button>}<p>{ product.quantity }</p>
                 <button onClick={ incrementFunction } className={ style.rightCartBtn } >&#x2b;</button>
             </div>
             <h3 className={ style.subtotal } >Subtotal: &#36;{ product.price * product.quantity }</h3>

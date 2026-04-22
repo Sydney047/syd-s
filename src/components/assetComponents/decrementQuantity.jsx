@@ -3,8 +3,13 @@ export default function decreaseQuantity ( { id, products, setProducts } ) {
 
     products.map( ( product )=> {
         if ( product.id === id ) {
-            product.quantity--;
-            newProducts.push( product );
+            if ( product.quantity === 0 ) {
+                newProducts.push( product );
+            } else {
+                product.quantity--;
+                newProducts.push( product );
+            }
+            
         } else 
             newProducts.push( product );
     })

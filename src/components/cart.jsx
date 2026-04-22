@@ -20,7 +20,7 @@ export default function Cart() {
             <GiShoppingCart size='10em'/>
             <h3>Ohhh... Your cart is empty</h3>
             <p>But it doesn't have to be😊</p>
-            <button className={ style.productBtn } ><Link to='/shop' >SHOP NOW</Link></button>
+            <button ><Link to='/shop' >SHOP NOW</Link></button>
         </div>
     }
 
