@@ -7,7 +7,7 @@ import increaseQuantity from "../assetComponents/incrementQuantity";
 import decreaseQuantity from "../assetComponents/decrementQuantity";
 
 
-export default function AllCategories() {
+export default function WomenCategory() {
     const { products, setProducts } = useOutletContext();
 
     return (<>

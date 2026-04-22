@@ -48,7 +48,7 @@
     left: 30%;
     width: 7em;
     height: 13em;
-    transform: skew( -30deg, -7deg);
+    transform: skew( -28deg, -7deg);
     background-color: var( --other-color );
     border-radius: 1.8rem;
     filter: blur(2px);
@@ -62,7 +62,7 @@
     right: 30%;
     width: 7em;
     height: 13em;
-    transform: skew( 30deg, 7deg);
+    transform: skew( 28deg, 7deg);
     background-color: var( --other-color );
     border-radius: 1.8rem;
     filter: blur(2px);
@@ -285,7 +285,7 @@
 }
 @media ( max-width: 600px ) {
     .productCard {
-        max-width: 90%;
+        width: 270px;
     }
     .cart {
         padding: .5rem;

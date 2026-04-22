@@ -27,11 +27,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primaryColor: #0a192f;
+    --primaryColor: #0a192fd5;
     --secondary: #ffd700;
     --other-color: #f1e4d1;
     --text-darkBg: #fff;
-    --bg: linear-gradient(160deg, #023859, #011c40, #02060e);
+    --bg: linear-gradient(160deg, #02060e,  #011c40, #011c40, #02060e);
     --accent: #aa3bff;
     --accent-bg: rgba(170, 59, 255, 0.1);
     --accent-border: rgba(170, 59, 255, 0.5);

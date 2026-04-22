@@ -6,7 +6,6 @@ import style from "./categories.module.css";
 import increaseQuantity from "../assetComponents/incrementQuantity";
 import decreaseQuantity from "../assetComponents/decrementQuantity";
 
-
 export default function Jewelery() {
     const { products, setProducts } = useOutletContext();
 
