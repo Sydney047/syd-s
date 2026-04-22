@@ -38,7 +38,7 @@ function App() {
       } else if ( cart.includes( product ) && product.quantity === 0 ) {
         const index = cart.indexOf( product );
         cart.splice( index, 1 );
-      }
+      } 
     })
   }
   //updates the cart 

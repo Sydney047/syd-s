@@ -1,9 +1,10 @@
 .productsContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-evenly;
-    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px;
 }
 .productCard {
     display: flex;
@@ -13,9 +14,9 @@
     align-items: center;
     align-content: flex-end;
     justify-content: center;
-    height: 400px;
-    max-width: 250px;
-    min-width: 230px;
+    height: 350px;
+    max-width: 230px;
+    min-width: 200px;
     background-color: var( --primaryColor );
     color: var( --text-darkBg );
     border-radius: 15px 24px;
@@ -44,9 +45,9 @@
     content: "";
     position: absolute;
     top: 1rem;
-    left: 10;
-    width: 40%;
-    height: 55%;
+    left: 30%;
+    width: 7em;
+    height: 13em;
     transform: skew( -30deg, -7deg);
     background-color: var( --other-color );
     border-radius: 1.8rem;
@@ -58,9 +59,9 @@
     content: "";
     position: absolute;
     top: 1rem;
-    right: 10;
-    width: 40%;
-    height: 55%;
+    right: 30%;
+    width: 7em;
+    height: 13em;
     transform: skew( 30deg, 7deg);
     background-color: var( --other-color );
     border-radius: 1.8rem;
@@ -111,7 +112,7 @@
     font-weight: bolder;
     font-size: 1em;
     border: none;
-    width: 3em ;
+    width: 2em ;
     height: 1.5rem;
     border-radius: 24px;
     cursor: pointer;
@@ -283,6 +284,9 @@
     font-size: .8em;
 }
 @media ( max-width: 600px ) {
+    .productCard {
+        max-width: 90%;
+    }
     .cart {
         padding: .5rem;
     }
